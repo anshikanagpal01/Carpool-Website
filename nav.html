@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Carpool Website</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">"Toh phir chale kya!"</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#" id="loginLink">Login</a></li>
+                <li><a href="#help">Help Center</a></li>
+            </ul>
+            <div class="toggle-container">
+                <i class="fas fa-sun"></i>
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" class="toggle"></label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+            <div class="popup">
+                <div class="close-btn">&times;</div>
+                <div class="form">
+                    <form action="">
+                    <h2>Login</h2>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember-me</label>
+                    </div>
+                    <div class="form-element">
+                        <button>Sign in</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Forgot password</a>
+                    </div>
+                </form>
+                </div>
+            </div>
+        <div class="image-container">
+            <img src="car.png" alt="Horizontal Picture" class="horizontal-picture">
+            <div class="image-text">
+                <h2>Welcome to Carpool</h2>
+                <p>Your reliable solution for shared transportation.</p>
+            </div>
+        </div>
+        <div class="columns-container">
+            <div class="column">
+                <h1>Your pick of rides at low prices</h1>
+                <p>No matter where you’re going, by bus or carpool, 
+                    find the perfect ride from our wide range of destinations and routes at low prices.</p>
+            </div>
+            <div class="column">
+                <h1>Trust who you travel with</h1>
+                <p>We take the time to get to know each of our members and bus partners. We check reviews, profiles
+                     and IDs, so you know who you’re travelling with and can book your ride at ease on our secure platform..</p>
+            </div>
+            <div class="column">
+                <h1>Scroll, click, tap and go!</h1>
+                <p>Booking a ride has never been easier! 
+                    Thanks to our simple app powered by great technology, you can book a ride close to you in just minutes.</p>
+            </div>
+        </div>
+        <div id="About" class="image-with-text">
+            <div class="text-overlay">
+                <h2>Your safety is our priority</h2>
+                <p>At Toh phir chale kya!, we're working hard to make our platform as secure as it can be.</p> 
+                    <p>But when scams do happen, we want you to know exactly how to avoid and report them. 
+                        Follow our tips to help us keep you safe.</p>
+            </div>
+            <img src="safety.png" alt="Fleet Image" class="fleet-image">
+        </div>
+        <div class="picture-content-container">
+            <div class="picture-content">
+                <div class="text-left">
+                    <h1>Driving in your car soon?</h1>
+                    <p>Carpool Bonus by completing 3 carpools in 3 months. See eligibility conditions.</p>
+                    <button class="explore-button">Explore</button>
+                </div>
+                <div class="picture-right">
+                    <img src="carpool.jpg" alt="Service Image" class="service-image">
+                </div>
+            </div>
+        </div>
+        <div class="where-to-go-container">
+            <h2>Where Do You Want to Go?</h2>
+            <div class="destination-columns">
+                <div class="destination-column">
+                    <img src="destination1.jpg" alt="Destination 1">
+                    <h3>Beach Paradise</h3>
+                    <p>Relax and enjoy the sun and sand.</p>
+                </div>
+                <div class="destination-column">
+                    <img src="destination2.jpeg" alt="Destination 2">
+                    <h3>Mountain Adventure</h3>
+                    <p>Explore breathtaking mountain trails.</p>
+                </div>
+                <div class="destination-column">
+                    <img src="destination3.jpg" alt="Destination 3">
+                    <h3>City Exploration</h3>
+                    <p>Discover urban culture and attractions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <h2>Find a Carpool</h2>
+            <div class="dropdowns">
+                <select>
+                    <option value="Selct from">From</option>
+                    <option value="location1">Chandigarh</option>
+                    <option value="location2">Delhi</option>
+                    <option value="location3">Ambala</option>
+                    <!-- Add more options for "From" -->
+                </select>
+                <select>
+                    <option value="whereTo">Where to</option>
+                    <!-- Add more options for "Where to" -->
+                </select>
+                
+                    <select>
+                        <option value="date">Date</option>
+                    </select>
+                
+                <select>
+                    <option value="passengers">Number of Passengers</option>
+                    <option value="option1">2</option>
+                    <option value="option2">3</option>
+                    <option value="option3">4</option>
+                </select>
+            </div>
+            <button class="search-button">Search</button>
+        </div>  
+        <div id="help">
+            <div class="help-center-container">
+            <h2>Carpool Help Center</h2>
+            <div class="article-columns">
+                <div class="article-column border">
+                    <h3>How do I book a carpool ride?</h3>
+                    <p>You can book a carpool ride on our mobile app, or on blablacar.com.</p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="article-details hidden">
+                        <p>Simply search for your destination, choose the date you want to travel pick the carpool that suits you best! Some rides can be booked instantly, while otherrequire manual approval from the driver
+                            . Either way, booking a carpool ride is fast, simple and easy</p>
+                    </div>
+                </div>
+                
+                <div class="article-column border">
+                    <h3>Benefits of Carpooling</h3>
+                    <p>Discover the advantages of carpooling for you and the environment.</p>
+                </div>
+                <div class="article-column">
+                    <h3>Tips for a Successful Carpool</h3>
+                    <p>Make the most of your carpool experience with these helpful tips.</p>
+                </div>
+                <div class="article-column">
+                    <h3>Managing Carpool Schedules</h3>
+                    <p>Learn how to coordinate schedules and keep your carpool running smoothly.</p>
+                </div>
+            </div>
+        </div>
+            <footer class="footer">
+                <div class="language-selector">
+                    <label for="language">Select Language:</label>
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <!-- Add more options for other languages -->
+                    </select>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.jpeg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://github.com/anshikanagpal01 "><i class="fab fa-github fa-2x"></i></a>
+                </div>
+                <p>&copy; 2023 Carpool. All rights reserved.</p>
+            </footer>
+            <script src="script.js"></script>
+    </body>
+</html>
